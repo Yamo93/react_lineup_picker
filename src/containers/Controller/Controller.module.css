@@ -1,0 +1,9 @@
+.Controller {
+    font-family: 'Cabin', sans-serif;
+    height: 650px;
+    width: 40%;
+    background: rgba(2, 2, 2, .7);
+    border: 5px solid #444;
+    padding: 30px 70px;
+    color: #FEFEFE;
+}

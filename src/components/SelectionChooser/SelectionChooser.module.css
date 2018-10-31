@@ -1,0 +1,67 @@
+.Selection {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.playerNameList, .playerNumberList {
+    list-style: none;
+}
+
+.playerNameList {
+    width: 50%;
+}
+
+.playerNameList li:last-of-type .inputName {
+    margin-bottom: 0;
+}
+
+.playerNameList li:nth-child(odd) .inputName {
+    background-color: #666;
+}
+
+.inputName {
+    font: inherit;
+    padding: 7px;
+    display: block;
+    margin-bottom: 5px;
+    width: 100%;
+    background-color: #555;
+    border: none;
+    color: #FEFEFE;
+    border: .5px solid #666;
+    border-radius: 5px;
+}
+
+.inputName:focus, .inputNum:focus {
+    outline: none;
+}
+
+.inputName::placeholder, .inputNum::placeholder {
+    color: rgba(255, 255, 255, .5);
+}
+
+
+.playerNumberList {
+    width: 25%;
+}
+
+.playerLabel, .numberLabel {
+    padding-bottom: 5px;
+    border-bottom: .7px solid rgba(255, 255, 255, .6);
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+.inputNum {
+    font: inherit;
+    padding: 7px;
+    display: block;
+    margin-bottom: 5px;
+    width: 50%;
+    background-color: #555;
+    border: none;
+    color: #FEFEFE;
+    border: .5px solid #666;
+    border-radius: 5px;
+}

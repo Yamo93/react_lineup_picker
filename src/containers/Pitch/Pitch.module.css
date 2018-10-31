@@ -1,0 +1,19 @@
+.Pitch {
+    box-sizing: border-box;
+    padding: 10px;
+    width: 55%;
+    height: 655px;
+    background: #11998e;  /* fallback for old browsers */
+    background: url(../../assets/img/transparent_background.png), -webkit-linear-gradient(to right, rgba(#38ef7d, .9), rgba(#11998e, .9)); /* Chrome 10-25, Safari 5.1-6 */
+    background: url(../../assets/img/transparent_background.png), linear-gradient(to right, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-position: center;
+    border: 5px solid wheat;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(7, 1fr) 3fr;
+    justify-items: center;
+    align-items: center;
+
+    
+}

@@ -1,0 +1,17 @@
+
+.formationLabel {
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.formationDrop {
+    background: #333;
+    color: #FEFEFE;
+    font: inherit;
+    padding: 3px;
+    margin-bottom: 40px;
+}
+
+.formationDrop:focus {
+    outline: none;
+}

@@ -1,0 +1,210 @@
+.Player {
+    width: 90px;
+    height: 90px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+
+.Player:before {
+    content: attr(title);
+    font-size: 14px;
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: wheat;
+    padding: 1px 5px;
+    /*left: 192%;*/
+    /*transform: translateX(-90%) translateY(50%) rotate(-135deg);*/
+}
+
+.Player:after {
+    content: attr(data-number); /* attr(data-number) */
+    text-align: center;
+    font-size: 20px;
+    position: absolute;
+    color: white;
+    height: 25px;
+    padding-bottom: 5px;
+    width: 20px;
+    background-color: #111;
+    top: 22%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.Shirt {
+    width: 35px;
+    height: 40px;
+    background:  repeating-linear-gradient( 
+        90deg,
+        #fff,
+        #fff 3px,
+        #000 3px,
+        #000 8px);
+    position: relative;
+}
+
+.Shirt:before {
+    content: '';
+    position: absolute;
+    left: -10px;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-bottom: 30px solid black;
+}
+.Shirt:after {
+    content: '';
+    position: absolute;
+    right: -10px;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-right: 10px solid transparent;
+    border-bottom: 30px solid black;
+}
+
+.Pants {
+    width: 30px;
+    height: 2px;
+    background-color: black;
+    position: relative;
+}
+
+.Pants:before {
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    content: '';
+    width: 12px;
+    height: 15px;
+    background-color: black;
+}
+
+.Pants:after {
+    position: absolute;
+    bottom: -15px;
+    right: 0;
+    content: '';
+    width: 12px;
+    height: 15px;
+    background-color: black;
+}
+
+/* 4-3-2-1 Style */
+.CF {
+    grid-column: 4 / 5;
+    grid-row: 1 / 2;
+}
+
+.RF {
+    grid-column: 6 / 7;
+    grid-row: 2 / 3;
+}
+
+.LF {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.RM {
+    grid-column: 5 / 6;
+    grid-row: 4 / 5;
+}
+
+.CM {
+    grid-column: 4 / 5;
+    grid-row: 5 / 6;
+}
+
+.LM {
+    grid-column: 3 / 4;
+    grid-row: 4 / 5;
+}
+
+.RD {
+    grid-column: 6 / 7;
+    grid-row: 6 / 7;
+}
+
+.MRD {
+    grid-column: 5 / 6;
+    grid-row: 7 / 8;
+}
+
+.MLD {
+    grid-column: 3 / 4;
+    grid-row: 7 / 8;
+}
+
+.LD {
+    grid-column: 2 / 3;
+    grid-row: 6 / 7;
+}
+
+.GK {
+    grid-column: 4 / 5;
+    grid-row: 8 / -1;
+}
+
+/* 4-4-2 Style */
+.LF442 {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+}
+
+.RF442 {
+    grid-column: 5 / 6;
+    grid-row: 1 / 2;
+}
+
+.RM442 {
+    grid-column: 6 / 7;
+    grid-row: 2 / 3;
+}
+
+.CRM442 {
+    grid-column: 5 / 6;
+    grid-row: 4 / 5;
+}
+
+.CLM442 {
+    grid-column: 3 / 4;
+    grid-row: 4 / 5;
+}
+
+.LM442 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.RD442 {
+    grid-column: 6 / 7;
+    grid-row: 6 / 7;
+}
+
+.MRD442 {
+    grid-column: 5 / 6;
+    grid-row: 7 / 8;
+}
+
+.MLD442 {
+    grid-column: 3 / 4;
+    grid-row: 7 / 8;
+}
+
+.LD442 {
+    grid-column: 2 / 3;
+    grid-row: 6 / 7;
+}
+
+.GK442 {
+    grid-column: 4 / 5;
+    grid-row: 8 / -1;
+}
