@@ -72,6 +72,207 @@ const player = (props) => {
             break;
         }
 
+        case ('4-3-3'): {
+            switch (props.position) {
+                case ("centralForward"): {
+                    Player.push(classes.CF433);
+                    break;
+                }
+        
+                case ("rightForward"): {
+                    Player.push(classes.RF433);
+                    break;
+                }
+        
+                case ("leftForward"): {
+                    Player.push(classes.LF433);
+                    break;
+                }
+        
+                case ("rightMid"): {
+                    Player.push(classes.RM433);
+                    break;
+                }
+        
+                case ("centralMid"): {
+                    Player.push(classes.CM433);
+                    break;
+                }
+        
+                case ("leftMid"): {
+                    Player.push(classes.LM433);
+                    break;
+                }
+        
+                case ("rightDef"): {
+                    Player.push(classes.RD);
+                    break;
+                }
+        
+                case ("midRightDef"): {
+                    Player.push(classes.MRD);
+                    break;
+                }
+        
+                case ("midLeftDef"): {
+                    Player.push(classes.MLD);
+                    break;
+                }
+        
+                case ("leftDef"): {
+                    Player.push(classes.LD);
+                    break;
+                }
+        
+                case ("goalKeeper"): {
+                    Player.push(classes.GK);
+                    break;
+                }
+        
+                default: {
+                    //console.log('lol');
+                    break;
+                }
+                
+            }
+
+            break;
+        }
+
+        case ('3-4-3'): {
+            switch (props.position) {
+                case ("centralForward"): {
+                    Player.push(classes.CF343);
+                    break;
+                }
+        
+                case ("rightForward"): {
+                    Player.push(classes.RF343);
+                    break;
+                }
+        
+                case ("leftForward"): {
+                    Player.push(classes.LF343);
+                    break;
+                }
+        
+                case ("rightMid"): {
+                    Player.push(classes.RM343);
+                    break;
+                }
+        
+                case ("centralLeftMid"): {
+                    Player.push(classes.CLM343);
+                    break;
+                }
+        
+                case ("centralRightMid"): {
+                    Player.push(classes.CRM343);
+                    break;
+                }
+        
+                case ("leftMid"): {
+                    Player.push(classes.LM343);
+                    break;
+                }
+        
+                case ("rightDef"): {
+                    Player.push(classes.RD343);
+                    break;
+                }
+        
+                case ("midDef"): {
+                    Player.push(classes.MD343);
+                    break;
+                }
+        
+                case ("leftDef"): {
+                    Player.push(classes.LD343);
+                    break;
+                }
+        
+                case ("goalKeeper"): {
+                    Player.push(classes.GK343);
+                    break;
+                }
+        
+                default: {
+                    //console.log('lol');
+                    break;
+                }
+                
+            }
+
+            break;
+        }
+
+        case ('3-5-2'): {
+            switch (props.position) {
+                case ("rightForward"): {
+                    Player.push(classes.RF352);
+                    break;
+                }
+        
+                case ("rightMid"): {
+                    Player.push(classes.RM352);
+                    break;
+                }
+        
+                case ("leftForward"): {
+                    Player.push(classes.LF352);
+                    break;
+                }
+        
+                case ("centralLeftMid"): {
+                    Player.push(classes.CLM352);
+                    break;
+                }
+        
+                case ("centralRightMid"): {
+                    Player.push(classes.CRM352);
+                    break;
+                }
+        
+                case ("centralMid"): {
+                    Player.push(classes.CM352);
+                    break;
+                }
+        
+                case ("leftMid"): {
+                    Player.push(classes.LM352);
+                    break;
+                }
+        
+                case ("rightDef"): {
+                    Player.push(classes.RD352);
+                    break;
+                }
+        
+                case ("midDef"): {
+                    Player.push(classes.MD352);
+                    break;
+                }
+        
+                case ("leftDef"): {
+                    Player.push(classes.LD352);
+                    break;
+                }
+        
+                case ("goalKeeper"): {
+                    Player.push(classes.GK352);
+                    break;
+                }
+        
+                default: {
+                    //console.log('lol');
+                    break;
+                }
+                
+            }
+
+            break;
+        }
+
         case ("4-4-2"): {
             console.log('yeah we in it');
             switch (props.position) {

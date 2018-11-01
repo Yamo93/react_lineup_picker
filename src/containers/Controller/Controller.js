@@ -6,7 +6,7 @@ import SelectionChooser from '../../components/SelectionChooser/SelectionChooser
 class Controller extends Component {
 
     render() {
-        console.log(this.props.players);
+        //console.log(this.props.players);
         return (
             <div className={classes.Controller}>
             {/* these should be individual components, it should be The React Way */}

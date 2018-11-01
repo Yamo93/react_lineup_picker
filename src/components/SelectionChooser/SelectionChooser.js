@@ -2,7 +2,7 @@ import React from 'react';
 import classes from './SelectionChooser.module.css';
 
 const selectionChooser = (props) => {
-    console.log(props.players);
+    //console.log(props.players);
     return (
         <div className={classes.Selection}>
         <ul className={classes.playerNameList}>
