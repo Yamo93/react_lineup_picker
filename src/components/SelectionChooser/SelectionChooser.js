@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Fragment} from 'react';
 import classes from './SelectionChooser.module.css';
 
 const selectionChooser = (props) => {
@@ -13,10 +13,10 @@ const selectionChooser = (props) => {
             {/* enter these dynamically */}
             {props.players.map(player => {
                 return (
-                    <>
-                    <input key={player.id} type="text" onChange={(event) => props.changedName(event, player.id)} placeholder={player.playerName} value={player.playerName} className={classes.inputName} />
+                    <Fragment key={player.playerNumber}>
+                    <input key={player.playerName} type="text" onChange={(event) => props.changedName(event, player.id)} placeholder={player.playerName} value={player.playerName} className={classes.inputName} />
                     <input key={player.id} type="number" onChange={(event) => props.changedNum(event, player.id)} min="1" max="40" value={player.playerNumber} placeholder={player.playerNumber} className={classes.inputNum} />
-                    </>
+                    </Fragment>
                 );
             })}
             

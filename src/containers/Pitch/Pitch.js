@@ -10,7 +10,7 @@ class Pitch extends Component {
             {/*this should be mapped out actually and kept in a list*/}
             {this.props.players.map(player => {
                 return (
-                    <Player formation={this.props.formation} key={player.id} playerName={player.playerName} playerNumber={player.playerNumber} position={player.position} />
+                    <Player formation={this.props.formation} key={player.id} playerName={player.playerName} playerNumber={player.playerNumber} position={player.position} kit={this.props.kit} />
                 );
             })}
             </div>

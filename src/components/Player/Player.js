@@ -3,6 +3,7 @@ import classes from './Player.module.css';
 
 const player = (props) => {
     let Player = [classes.Player];
+    let Shirt = [classes.Shirt];
 
     switch (props.formation) {
         case ('4-3-2-1'): {
@@ -350,11 +351,56 @@ const player = (props) => {
         }
     }
 
+    // Add color kits here
+    switch (props.kit) {
+        case ("Black-White Striped"): {
+            Shirt.push(classes.blackWhiteStriped);
+            break;
+        }
 
+        case ("Black-Blue Striped"): {
+            Shirt.push(classes.blackBlueStriped);
+            break;
+        }
+
+        case ("Black-Red Striped"): {
+            Shirt.push(classes.blackRedStriped);
+            break;
+        }
+
+        case ("Blue-Red Striped"): {
+            Shirt.push(classes.blueRedStriped);
+            break;
+        }
+
+        case ("Black-Red in Half"): {
+            Shirt.push(classes.blackRedHalf);
+            break;
+        }
+
+        case ("Plain Red"): {
+            Shirt.push(classes.plainRed);
+            break;
+        }
+
+        case ("Plain White"): {
+            Shirt.push(classes.plainWhite);
+            break;
+        }
+
+        case ("Plain Lightblue"): {
+            Shirt.push(classes.plainLightblue);
+            break;
+        }
+
+        default: {
+            break;
+        }
+    }
 
     return (
         <div title={props.playerName} data-number={props.playerNumber} className={Player.join(' ')}>
-            <div className={classes.Shirt}></div>
+            <div className={Shirt.join(' ')}></div>
             <div className={classes.Pants}></div>
         </div>
     );

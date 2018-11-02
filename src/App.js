@@ -14,6 +14,7 @@ GOALS ACHIEVED:
 
 TODOS:
  - create changeColorHandler
+ select colors to add, add a dropdown-menu, add colors to state and render them dynamically to dropdown.
 
  - make it responsive
 
@@ -98,7 +99,17 @@ class App extends Component {
   ], 
     formation: '4-3-2-1',
     formationIsChanged: false,
-    showedFormation: []
+    showedFormation: [],
+    kits: ['Black-White Striped', 
+    'Black-Blue Striped',
+    'Black-Red Striped',
+    'Blue-Red Striped',
+    'Black-Red in Half',
+    'Plain Red',
+    'Plain Lightblue',
+    'Plain White'
+  ],
+  currentKit: 'Black-White Striped'
   };
 
   changePlayerNameHandler = (event, key) => {
@@ -152,6 +163,10 @@ class App extends Component {
     }));
   }
 
+  changeColorHandler = (event, currentColor) => {
+    this.setState({currentKit: currentColor});
+  }
+
   render() {
 
     let currentPlayers = [...this.state.players];
@@ -162,8 +177,8 @@ class App extends Component {
 
     return (
       <div className={classes.App}>
-        <Controller players={!this.state.formationIsChanged ? this.state.players[0][this.state.formation] : this.state.showedFormation} changedName={this.changePlayerNameHandler} changedNum={this.changePlayerNumHandler} changedFormation={this.changeFormationHandler} formations={formations} />
-        <Pitch formation={this.state.formation} players={!this.state.formationIsChanged ? this.state.players[0][this.state.formation] : this.state.showedFormation} changedName={this.changePlayerNameHandler} changedNum={this.changePlayerNumHandler} />
+        <Controller players={!this.state.formationIsChanged ? this.state.players[0][this.state.formation] : this.state.showedFormation} changedName={this.changePlayerNameHandler} changedNum={this.changePlayerNumHandler} changedFormation={this.changeFormationHandler} formations={formations} kits={this.state.kits} currentKit={this.state.currentKit} changedColor={this.changeColorHandler} />
+        <Pitch formation={this.state.formation} players={!this.state.formationIsChanged ? this.state.players[0][this.state.formation] : this.state.showedFormation} changedName={this.changePlayerNameHandler} changedNum={this.changePlayerNumHandler} kit={this.state.currentKit} />
       </div>
     );
   }
