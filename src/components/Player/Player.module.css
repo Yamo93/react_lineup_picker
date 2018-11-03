@@ -297,6 +297,8 @@
 .GK {
     grid-column: 4 / 5;
     grid-row: 8 / -1;
+    position: absolute;
+    bottom: 0;
 }
 
 /* 4-3-3 Style */
@@ -525,12 +527,12 @@
 
 @media screen and (max-width: 600px) {
     .GK442, .GK343, .GK, .GK352, .GK433 {
-        bottom: 30px;
+        bottom: 50px;
     }
 }
 
 @media screen and (max-width: 500px) {
     .GK442, .GK343, .GK, .GK352, .GK433 {
-        bottom: 50px;
+        bottom: 40px;
     }
 }

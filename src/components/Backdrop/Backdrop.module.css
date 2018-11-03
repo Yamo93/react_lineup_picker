@@ -1,0 +1,13 @@
+.Backdrop {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, .2);
+    z-index: 10;
+    transform: translateY(-5%);
+    transition: all .4s;
+}
+
+.BackdropHidden {
+    display: none;
+}

@@ -1,13 +1,3 @@
-/*
-For 700px and less:
-first try to get rid of the padding, so we can get down to like 600px or something smoothly.
-
-Then, try to make the controller smaller: make the input widths smaller, maybe add a third column in the grid. Maybe even make the font-size smaller and shorten the input heights
-
-Then, also make the pitch smaller (it should be just 300px or even a little bit less, like 280px). Make the player outfits and the player names a lot smaller, maybe make the player names a little bigger than the outfit so they can be read.
-
-Small improvements: make controller padding-bottom a bit bigger so we have some room between controller and pitch... also maybe some slight margin
-*/
 
 .Controller {
     font-family: 'Cabin', sans-serif;
