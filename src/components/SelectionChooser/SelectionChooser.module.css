@@ -4,9 +4,17 @@
     justify-content: space-between;
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1150px) {
     .Selection {
       flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .Selection {
+        width: 80%;
+        justify-content: flex-end;
+        align-items: center;
     }
 }
 
@@ -68,7 +76,7 @@
     border-radius: 5px;
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1150px) {
     .playerWrapper {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -79,3 +87,15 @@
         display: block;
     }
   }
+
+  @media screen and (max-width: 600px) {
+    .inputName, .inputNum {
+        width: 70%;
+        font-size: 12px;
+        min-width: 65px;
+    }
+
+    .inputNum {
+        min-width: 45px;
+    }
+}

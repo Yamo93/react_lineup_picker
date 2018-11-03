@@ -9,6 +9,20 @@
     position: relative;
 }
 
+@media screen and (max-width: 600px) {
+    .Player {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .Player {
+        width: 25px;
+        height: 25px;
+    }
+}
+
 .Player:before {
     content: attr(title);
     font-size: 14px;
@@ -20,6 +34,19 @@
     padding: 1px 5px;
     /*left: 192%;*/
     /*transform: translateX(-90%) translateY(50%) rotate(-135deg);*/
+}
+
+@media screen and (max-width: 600px) {
+    .Player:before {
+        font-size: 12px;
+        bottom: -10px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .Player:before {
+        bottom: -35px;
+    }
 }
 
 .Player:after {
@@ -37,10 +64,26 @@
     transform: translate(-50%, -50%);
 }
 
+@media screen and (max-width: 500px) {
+    .Player:after {
+        width: 18px;
+        height: 18px;
+        font-size: 15px;
+        top: 40%;
+    }
+}
+
 .Shirt {
     width: 35px;
     height: 40px;
     position: relative;
+}
+
+@media screen and (max-width: 500px) {
+    .Shirt {
+        width: 30px;
+        height: 35px;
+    }
 }
 
 .blackWhiteStriped {
@@ -123,6 +166,15 @@
     border-left: 10px solid transparent;
     border-bottom: 30px solid black;
 }
+
+@media screen and (max-width: 500px) {
+    .Shirt:before {
+        border-left: 9px solid transparent;
+        left: -9px;
+        border-bottom: 15px solid black;
+    }
+}
+
 .Shirt:after {
     content: '';
     position: absolute;
@@ -134,11 +186,25 @@
     border-bottom: 30px solid black;
 }
 
+@media screen and (max-width: 500px) {
+    .Shirt:after {
+        border-right: 9px solid transparent;
+        right: -9px;
+        border-bottom: 15px solid black;
+    }
+}
+
 .Pants {
     width: 30px;
     height: 2px;
     background-color: black;
     position: relative;
+}
+
+@media screen and (max-width: 500px) {
+    .Pants {
+        width: 20px;
+    }
 }
 
 .Pants:before {
@@ -151,6 +217,14 @@
     background-color: black;
 }
 
+@media screen and (max-width: 500px) {
+    .Pants:before {
+        width: 8px;
+        bottom: -12px;
+        height: 12px;
+    }
+}
+
 .Pants:after {
     position: absolute;
     bottom: -15px;
@@ -159,6 +233,14 @@
     width: 12px;
     height: 15px;
     background-color: black;
+}
+
+@media screen and (max-width: 500px) {
+    .Pants:after {
+        width: 8px;
+        bottom: -12px;
+        height: 12px;
+    }
 }
 
 /* 4-3-2-1 Style */

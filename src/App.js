@@ -13,10 +13,10 @@ GOALS ACHIEVED:
  ** add more formations like 4-3-3, and some other ones that you can search for. You want at least 4-5 different formations, the most common ones: => DONE, 5 formations done
 
 TODOS:
- - create changeColorHandler
- select colors to add, add a dropdown-menu, add colors to state and render them dynamically to dropdown.
+ - create changeColorHandler => DONE.
+ select colors to add, add a dropdown-menu, add colors to state and render them dynamically to dropdown. => DONE.
 
- - make it responsive
+ - make it responsive => DONE (80%, need to make pitch and players smaller so they fit on a small mobile phone)
 
  - add a modal that slides down initially and shows the "instructions" for the lineup-picker
 
