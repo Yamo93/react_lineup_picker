@@ -519,6 +519,18 @@
 }
 
 .GK442 {
-    position: absolute;
-    bottom: 0;
+    position: absolute; 
+    bottom: 0;   
+}
+
+@media screen and (max-width: 600px) {
+    .GK442, .GK343, .GK, .GK352, .GK433 {
+        bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .GK442, .GK343, .GK, .GK352, .GK433 {
+        bottom: 50px;
+    }
 }
